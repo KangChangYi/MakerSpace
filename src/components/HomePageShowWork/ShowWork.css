@@ -1,0 +1,48 @@
+.ShowWork-frame {
+  width: 100%;
+}
+.show-works-frame {
+  width: 1250px;
+  font-size: 14px;
+  float: left;
+  margin-bottom: 50px;
+}
+.show-works-item {
+  float: left;
+  padding: 10px;
+  transition: all 0.35s;
+}
+.show-works-item:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+.show-works-item-image {
+  width: 290px;
+  height: 210px;
+  overflow: hidden;
+}
+.show-works-item-image img {
+  width: 290px;
+  height: 210px;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: 0.25s;
+}
+.show-works-item:hover .show-works-item-image img {
+  transform: scale(1.07);
+}
+.show-works-item-name {
+  font-size: 14px;
+  margin-top: 4px;
+  color: #464c5b;
+  font-weight: bold;
+}
+.show-works-item-introduce {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #657180;
+}
+.tag {
+  float: left;
+}

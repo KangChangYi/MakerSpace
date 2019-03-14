@@ -1,0 +1,463 @@
+
+/* 全局*/
+@color:#f1f1f1;
+@layoutWidth:1250px;
+@redborder:1px red solid;
+#app {
+  min-width:1250px;
+  // 改  70px
+  margin-top:70px;  
+  min-height: 100vh;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  background: #f7f7f7;
+  //改
+  // overflow-x:auto;
+}
+.page-mid {
+  width: @layoutWidth;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom:50px;
+}
+.footer-frame{
+  width:100%;
+  background: white;
+  height: 150px;
+  display: flex;
+}
+.footer-inside-info {
+  height: 150px;
+  min-width: @layoutWidth;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  display: flex
+}
+.fearlessImg {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.big-title {
+  color: white;font-size:50px;padding-top:170px;
+  letter-spacing: 5px;
+}
+.title-text{
+  line-height: 30px;
+  margin-top:30px;
+  width:650px;
+  text-align: left;
+  letter-spacing: 1px;
+  color:#CDCDCD;font-size:18px;
+}
+.title-text-2{
+  color:#CDCDCD;font-size:18px;
+  width:650px;
+  text-align: right;
+}
+
+
+
+
+
+
+
+// 导航栏
+.navigation-layout {
+  background: #343434;
+  box-shadow: #272727 0px 0px 4px;
+  min-width: 100%;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  box-sizing:border-box;
+  z-index: 999;
+}
+
+.navigation-inside-layout {
+  width: 1000px;
+  height: 70px;
+  margin: auto;
+}
+
+.navigation-cell {
+  float: left;
+  text-align: center;
+  width: 80px;
+  height: 70px;
+  transition: all 0.25s;
+  color: @color;
+}
+
+.navigation-cell:hover {
+  background: #454545;
+  color: white; 
+}
+
+.navigation-hoverColor {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 5px;
+  transition: all 0.25s;
+}
+
+.navigation-cell:hover .navigation-hoverColor {
+  background: #f1f1f1;
+}
+
+.navigation-sign-in {
+  float: right;
+  margin-top: 25px;
+  margin-left: 30px;
+  color: @color;
+}
+
+.navigation-search {
+  width: 270px;
+  float: right;
+  margin-top: 19px;
+}
+// 导航栏
+
+
+
+
+
+
+
+
+
+// 首页作品展示
+@fontSizeL:14px;
+@fontSizeS:12px;
+
+.bg-image {
+  font-size:84px;
+  font-family: "Futura";
+  color:#DFDFDF;
+  height: 400px;
+  background-image: url("../assets/index-top2.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+} 
+
+.maker-space-logo {
+  width: 650px;
+}
+
+.show-team-frame {
+  width: 1250px;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between
+}
+
+.show-team {
+  background-size:cover;
+  width: 300px;
+  height: 180px;
+  border-radius: 3px;
+  transition: all 0.25s;
+}
+
+.show-team:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.title-frame{
+  float: left;
+  padding-left: 10px;
+  width: 1250px;
+  margin-bottom:20px;
+}
+
+.title {
+  margin-right:50px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  color: #777;
+  font-size: 17px;
+  font-weight: bold;
+  width: fit-content;
+  float: left;
+  transition: all 0.25s;
+}
+
+.title:hover{
+  color:#343434;
+}
+
+
+// 首页作品展示
+
+
+
+
+
+
+
+
+
+// 作品页
+.works-page-title {
+  padding: 20px 0 0 20px;
+  width: @layoutWidth;
+  margin: auto;
+  height: 100px;
+  font-size: 35px;
+  color: #464c5b;
+}
+.works-page-categories {
+  width: 20%;
+  padding: 0 20px 20px 20px;
+  box-sizing: border-box;
+  border-right: 1px #DFDFDF solid;
+  border-bottom: 1px #DFDFDF solid;
+}
+.works-page-work-list-outside-frame {
+  padding: 0 20px 20px 20px;
+  box-sizing: border-box;
+  border-bottom: 1px #DFDFDF solid;
+  width: 80%;
+}
+.Categories {
+  color: #464c5b;
+  font-size: 17px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 30px;
+}
+.Categories-item {
+  cursor: pointer;
+  padding: 4px 0 0 7px;
+  height: 25px;
+  color: #657180;
+  font-size: 12px;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+.Categories-item:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+.Categories-item-name{
+  float:left;
+}
+.Categories-item-number{
+  float:right;color:#bcbcbc;margin-right:10px;
+}
+.search {
+  width: 200px;
+  margin-top: 10px
+}
+
+.work-list-inside-frame {
+  min-height: 1000px;
+}
+
+.work-list-title {
+  color: #464c5b;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.work-list-title-sumNumber {
+  color: #9ea7b4;
+  font-size: 15px;
+  margin: 7px 0 12px 0;
+}
+
+.work-list-item-frame {
+  margin-bottom: 20px;
+  height: 240px;
+  padding: 15px 0 0 15px;
+  background: white;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.work-list-item-image {
+  float: left;
+  width: 290px;
+  height: 210px;
+  margin-right: 15px;
+}
+
+.work-list-item-name {
+  float: left;
+  color: #464c5b;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom:10px;
+}
+
+.work-list-item-tag-group{
+  float: left;
+  width:65%;
+  margin-bottom:10px;
+}
+
+.work-list-item-teamName{
+  float: left;
+  width:65%;
+  font-size:16px;
+  margin-bottom:10px;
+}
+
+.work-list-item-introduce {
+  float: left;
+  width: 65%;
+  margin-bottom:10px;
+  height: 68px;
+  font-size: 14px;
+  color: #657180;
+}
+
+.work-list-item-otherItem{
+  float: left;height:25px;width:65%;font-size:14px;color:#657180;
+}
+
+.work-list-item-eye{
+  width:24px;height:24px;float: left;  
+}
+
+.work-list-item-hits{
+  float:left;margin:2px 0 0 4px;
+}
+
+.work-list-item-time{
+  float:right;padding-top:1px;
+}
+
+.work-list-item-paging{
+  display: flex;
+  justify-content: center;
+}
+// 作品页
+
+
+
+
+
+
+// 团队列表页
+.team-page-bg {
+  height: 600px;
+  background-image: url("../assets/teamlist.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button2 {
+  margin-top: 60px;
+  width: 180px;
+  height: 55px;
+  border: 1px solid rgb(255, 255, 255, 0.3);
+  border-radius: 3px 3px 3px 3px;
+  background: rgba(255, 255, 255, 0);
+  font-size: 17px;
+  color: white;
+  transition: all 0.4s;
+}
+
+.button2:hover {
+  cursor: pointer;
+  border: 1px solid rgb(255, 255, 255, 0.3);
+  background: rgb(255, 255, 255, 0.4);
+}
+
+
+// 团队列表页
+
+
+
+
+
+
+
+//注册页
+
+.Sign-page-top-bg {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../assets/Sign.jpg");
+  background-size: cover;
+}
+
+.Sign-page-top-text {
+  margin: auto;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.Sign-page-form {
+  font-size: 13px;
+  width: 750px;
+  margin: auto;
+  margin-top: 170px;
+  margin-bottom:100px;
+  display: flex;
+}
+
+.Sign-form-left {
+  width: 570px;
+  border-right: 1px #DFDFDF solid;
+}
+.Sign-form-tips{
+  width:180px;
+  color:#657180;
+  flex-wrap: wrap;
+  font-size:12px;
+  margin-left:40px;
+}
+.form-button {
+  margin: auto;
+  width:100px;
+  display: flex;
+}
+
+.form-frame {
+  width: 100%;
+  display: flex;
+  margin-bottom: 40px;  
+}
+.form-text{
+  width:200px;
+  text-align: right;padding-right:20px;line-height:30px;
+}
+
+.Scroll-down {
+  margin: auto;
+  width:175px;
+  font-size: 32px;
+  margin-top: 40px;
+}
+
+.Scroll-button {
+  color: #EFEFEF;
+  transition: all 0.3s;
+}
+
+.Scroll-button:hover {
+  color: rgba(231, 231, 231, 0.7);
+  transform: scale(0.9);
+}
+
+.disabled {
+  background-color: #ddd;
+  border-color: #ddd;
+  color: rgb(71, 203, 137);
+  cursor: not-allowed;
+  /* 鼠标变化 */
+}
+
+
+//注册页

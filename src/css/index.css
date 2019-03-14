@@ -1,0 +1,135 @@
+/* 全局css */
+
+#app {
+  min-height: 100%;
+  min-width: 1250px;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f7f7f7;
+  background-size: auto;
+}
+
+.page-mid {
+  width: 1250px;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+}
+
+.page-bottom {
+  height: 150px;
+  width: 1250px;
+  margin: auto;
+  justify-content: space-around;
+  align-items: center;
+  display: flex
+}
+
+.fearlessImg {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* 全局css */
+
+/* 作品列表css */
+
+.works-page-top {
+  padding: 20px 0 0 20px;
+  width: 1250px;
+  margin: auto;
+  height: 100px;
+  font-size: 35px;
+  color: black;
+}
+
+.works-page-mid-left {
+  width: 20%;
+  padding: 0 20px 20px 20px;
+  box-sizing: border-box;
+  border-right: 1px #DFDFDF solid;
+  border-bottom: 1px #DFDFDF solid;
+}
+
+.works-page-mid-right {
+  padding: 0 20px 20px 20px;
+  box-sizing: border-box;
+  border-bottom: 1px #DFDFDF solid;
+  text-align: left;
+  width: 80%;
+}
+
+.work-list-right-title {
+  min-height: 1050px;
+  width: 100%;
+  float: left;
+}
+
+.work-list-right-title-name {
+  color: #464c5b;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.work-list-right-title-worksNumber {
+  color: #9ea7b4;
+  font-size: 15px;
+  margin: 7px 0 12px 0;
+}
+
+.work-list-right-content-info {
+  z-index: 100;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 240px;
+  padding: 15px 0 0 15px;
+  background: white;
+  box-shadow: 1px 1px 5px #DFDFDF;
+  border-radius: 3px;
+}
+
+.work-list-content-image {
+  float: left;
+  width: 290px;
+  height: 210px;
+  margin-right: 7px;
+}
+
+.work-list-content-name {
+  margin: 0px 0 7px 10px;
+  float: left;
+  width: 65%;
+  height: 25px;
+  color: #464c5b;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.work-list-content-introduce {
+  margin-left: 10px;
+  float: left;
+  width: 65%;
+  flex-wrap: wrap;
+  height: 88px;
+  font-size: 14px;
+  color: #657180;
+}
+
+.work-list-content-tag {
+  float: left;
+  width: fit-content;
+}
+
+.work-list-underline {
+  border-bottom: 1px #DFDFDF solid;
+  width: 100%;
+  height: 1px;
+  float: left;
+  margin-bottom: 20px;
+}
+
+/* 作品列表css */
